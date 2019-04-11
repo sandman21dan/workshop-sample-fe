@@ -8,9 +8,7 @@ exports[`renders correctly 1`] = `
   <div
     className="app__content"
   >
-    <p>
-      Hello react!
-    </p>
+    <Users />
   </div>
   <Footer />
 </div>
