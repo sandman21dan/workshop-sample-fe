@@ -1,0 +1,43 @@
+.nav {
+  $nav-color: #6464e4;
+
+  height: 4rem;
+  background-color: $nav-color;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 3rem;
+
+  &__logo {
+    $logo-size: 2.2rem;
+    $logo-colour: orange;
+    $logo-offset: .8rem;
+
+    @mixin logoBase() {
+      width: $logo-size;
+      height: $logo-size;
+      border-radius: 50%;
+    }
+
+    @include logoBase();
+    background-color: darken($logo-colour, 5%);
+    position: relative;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      @include logoBase();
+      background-color: $logo-colour;
+      right: -$logo-offset;
+    }
+
+    &::after {
+      content: ' ';
+      position: absolute;
+      @include logoBase();
+      background-color: lighten($logo-colour, 5%);
+      right: -(2 * $logo-offset);
+    }
+  }
+}

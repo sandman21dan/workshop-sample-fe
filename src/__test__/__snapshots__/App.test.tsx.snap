@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<p>
-  Hello react!
-</p>
+<div
+  className="app"
+>
+  <Header />
+  <div
+    className="app__content"
+  >
+    <p>
+      Hello react!
+    </p>
+  </div>
+  <Footer />
+</div>
 `;
