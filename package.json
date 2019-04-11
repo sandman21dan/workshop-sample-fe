@@ -1,0 +1,37 @@
+{
+  "name": "workshop-sample-fe",
+  "version": "1.0.0",
+  "description": "A sample react FE to build pipelines upon",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html",
+    "test": "jest --watch"
+  },
+  "keywords": [
+    "react",
+    "fe",
+    "api",
+    "spa"
+  ],
+  "author": "Daniel Perez",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.1",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.9.1",
+    "@types/jest": "^24.0.11",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "enzyme-to-json": "^3.3.5",
+    "jest": "^24.7.1",
+    "parcel-bundler": "^1.12.3",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.3"
+  }
+}
