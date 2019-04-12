@@ -1,3 +1,44 @@
 .users {
-  border: 1px solid grey;
+  $table-colour: whitesmoke;
+  // $table-colour: #f5cbb3;
+  $table-radius: 4px;
+  $table-padding: .8rem;
+
+  box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  overflow: hidden;
+
+  &__row {
+    background-color: $table-colour;
+
+    &:nth-of-type(odd) {
+      background-color: darken($table-colour, 3%);
+    }
+  }
+
+  &__cell {
+    padding: .3rem;
+
+    &:first-of-type {
+      padding-left: $table-padding;
+    }
+
+    &:last-of-type {
+      padding-right: $table-padding;
+    }
+
+    & + & {
+      padding-left: $table-padding;
+    }
+  }
+
+  &__heading {
+    background-color: darken($table-colour, 7%);
+
+    & > * {
+      text-align: left;
+      padding-top: $table-padding;
+      padding-bottom: $table-padding;
+    }
+  }
 }

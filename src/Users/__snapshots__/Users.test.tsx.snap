@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with no users 1`] = `
+<table
+  cellSpacing="0"
+  className="users"
+>
+  <tr
+    className="users__heading"
+  >
+    <th
+      className="users__cell"
+    >
+      Name
+    </th>
+    <th
+      className="users__cell"
+    >
+      Last name
+    </th>
+    <th
+      className="users__cell"
+    >
+      Phone Number
+    </th>
+  </tr>
+</table>
+`;
+
+exports[`renders correctly with users 1`] = `
+<table
+  cellSpacing="0"
+  className="users"
+>
+  <tr
+    className="users__heading"
+  >
+    <th
+      className="users__cell"
+    >
+      Name
+    </th>
+    <th
+      className="users__cell"
+    >
+      Last name
+    </th>
+    <th
+      className="users__cell"
+    >
+      Phone Number
+    </th>
+  </tr>
+  <User
+    key="0"
+    user={
+      Object {
+        "id": "GUUID-1",
+        "lastName": "Doe",
+        "name": "John",
+        "phone": "0777665544",
+      }
+    }
+  />
+  <User
+    key="1"
+    user={
+      Object {
+        "id": "GUUID-2",
+        "lastName": "Donald",
+        "name": "Johnathan",
+        "phone": "0777665543",
+      }
+    }
+  />
+</table>
+`;
