@@ -2,3 +2,5 @@
 FROM bitnami/nginx:1.14.2
 
 COPY ./dist/ /app
+# Override nginx.config template
+COPY ./docker/ /
