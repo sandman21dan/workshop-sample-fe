@@ -7,7 +7,8 @@
     "build": "npm run clean && parcel build src/index.html",
     "clean": "rimraf dist .cache",
     "start": "parcel src/index.html",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "test:ci": "jest --forceExit"
   },
   "keywords": [
     "react",
